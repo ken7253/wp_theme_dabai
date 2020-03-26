@@ -31,6 +31,7 @@ body {-webkit-font-feature-settings: "palt","lnum"; font-feature-settings: "palt
 .flex-wrp-ard {display: flex; flex-wrap: wrap; justify-content: space-around;}
 .block {display: block;}
 .inline {display: inline;}
+.en {font-family: var(--en-font);}
 
 /* ==========================
     TEMPLATE LAYOUT
@@ -62,7 +63,6 @@ main {padding: 50px 0;}
 .about-content {background-color: var(--white-color);padding: 2vw;}
 /* archive page */
 .archive-content {background-color: var(--white-color);padding: 2vw;}
-.archive-ttl-h2 {border-bottom: solid 3px var(--accent-color);}
 .archive-content ul {flex-direction: column;}
 .archive-content .thumbnail {width: 150px;height: auto;margin-right: 10px;}
 /* pager */
@@ -81,9 +81,19 @@ main {padding: 50px 0;}
 ========================== */
 
 /* heading style */
-.common-ttl-h1{margin: 0;height: 100%;font-size: 1.5rem;font-family: var(--en-font);text-transform: uppercase;text-align: center;line-height: 2;color: var(--accent-color);}
+.ttl-horizon {display: flex;align-items: center; text-align: center;}
+.ttl-horizon::before,.ttl-horizon::after {content: '';height: 2px;background-color: var(--text-color);flex-grow: 1;margin: 0 2rem;}
+
+.common-ttl-h1 {margin: 0;height: 100%;font-size: 1.5rem;font-family: var(--en-font);text-transform: uppercase;text-align: center;line-height: 2;color: var(--accent-color);}
 .common-ttl-h2 {width: 100%;font-family: var(--en-font);font-style: oblique;font-weight: 700;font-size: 6.25rem;text-transform: uppercase;text-shadow: 3px 3px 0 var(--sub-color);}
 .common-ttl-h3 {font-family: var(--en-font);font-style: oblique;font-size: 1.5rem;text-shadow: 2px 2px var(--sub-color);}
+
+.archive-ttl-h2 {display: flex;align-items: flex-end;justify-content: space-between; border-bottom: solid 3px var(--accent-color);}
+.archive-ttl-h2 span {font-size: .75em;font-family: var(--en-font);font-style: oblique;text-transform: uppercase;color: var(--accent-color);}
+
+.lower-ttl-h2 {align-items: center; font-size: 3rem;text-align: center;margin-bottom: 5vh;line-height: 1;}
+.lower-ttl-h2 span {font-family: var(--en-font); font-size: .5em;font-style: oblique;text-transform: uppercase;color: var(--accent-color);}
+.lower-ttl-h3 {font-size: 2rem;text-align: center;background-color: var(--sub-color);}
 
 /* ==========================
     TOP PAGE LAYOUT
@@ -191,10 +201,16 @@ input,select,textarea,button{font-size: 100%; font-family: inherit;}
 /* lower-page */
 /* about */
 .lower-page .about-social{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: var(--en-font);
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0 30px 0;
 }
 .lower-page .about-social a {
     display: block;
+}
+.lower-page .about-social i {
+    font-size: 2em;
 }

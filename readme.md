@@ -42,6 +42,7 @@ The following classes are prepared as general-purpose classes.
 - flex-wrp-ard `{display: flex; flex-wrap: wrap; justify-content: space-around;}`
 - block `{display: block;}`
 - inline `{display: inline;}`
+- en `{font-family: var(--en-font);}`
   
 ### JavaScript  
 - [html5shiv.js](https://github.com/aFarkas/html5shiv)  
@@ -60,8 +61,3 @@ This site was created by [ken7253](https://dairoku-studio.com)
   
 Sorry, we may not be able to provide technical support for this site.  
 Please refer to the official reference for WordPress etc.  
-
-### THIS Document Change log
-**yyyy-MM-dd(Comment)**  
-
-- 2020-03-20 (Create)@ken7253  

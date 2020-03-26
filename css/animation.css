@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* CSS NATIVE Animation */
+.blog-list .post-container {
+    transform: scale(1);
+    transition: transform 200ms 0s cubic-bezier(0, 1.5, 0.95, 1.30);
+}
+.blog-list .post-container:hover {
+    transform: scale(1.03);
+}
+
+.contact-form-tbl input,.contact-form-tbl textarea {
+    border-bottom: solid 2px var(--text-color);
+    transition: border-bottom 300ms 0s ease-in;
+}
+.contact-form-tbl input:focus, .contact-form-tbl textarea:focus {
+    border-bottom: solid 2px var(--accent-color);
+}
+
+.social-nav li {
+    transform: translate(0,0);
+    text-shadow: none;
+    transition: 200ms ease-in-out;
+}
+.social-nav li:hover {
+    transform: translate(-3px,-3px);
+    text-shadow: 3px 3px 0 var(--text-color);
+}
+.contact-from-send input {
+    color: var(--theme-color);
+    border-color: var(--theme-color);
+    background-color: var(--white-color);
+}
+
+.contact-from-send input:hover {
+    color: var(--white-color);
+    border-color: var(--theme-color);
+    background-color: var(--theme-color);
+}
+/* use with Vue.js */
+.fadeTop-enter-active, .fadeTop-leave-active {
+    transition: opacity .5s;
+}
+.fadeTop-enter, .fadeTop-leave-to {
+    opacity: 0;
+}

@@ -1,0 +1,28 @@
+@media screen and (max-width:767px){
+    .common-ttl-h2 {
+        font-size: 3.75rem;
+    }
+    .social-nav li:hover {
+        transform: translate(0,0);
+        text-shadow: none;
+    }
+    #about::after {transform: skewY(-5deg);}
+    /* section blog */
+    #blog::after {transform: skewY(5deg);}
+    .blog-list ul {display: block;}
+    .blog-list .thumbnail {width: 50px;height: 50px;}
+    .blog-list .post {margin-left: 10px;}
+
+}
+@media screen and (min-width:767px){
+    .container {padding: 0 15vw;margin: auto;}
+    /* section about */
+    .about-description {margin: 2.5em 3vw 0 0;max-width: 500px;}
+    .about-twitchtv {max-width: 500px;}
+    /* section blog */
+    #blog .blog-list .post-container {height: 100%; flex-direction: column;margin: 0;padding: 0 0 10px 0;}
+    #blog .blog-list li {width: 20%;margin: 5px;}
+    #blog .blog-list .post-date {text-align: end;}
+    #blog .blog-list .post-new::before {display: block;}
+    /* section contact */
+}

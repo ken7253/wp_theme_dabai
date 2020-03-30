@@ -72,3 +72,14 @@ function pagination( $pages, $paged, $range = 2, $show_only = false ) {
 add_post_type_support( 'page', 'excerpt' );
 remove_filter('the_excerpt', 'wpautop');
 remove_filter('term_description','wpautop');
+
+add_action( 'wp_footer', 'add_thanks_page' );
+function add_thanks_page() {
+echo <<< EOD
+<script>
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+  location = 'https://dabaiosamu.com/thanks/'; 
+}, false );
+</script>
+EOD;
+}

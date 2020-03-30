@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 <main id="content">
+    <section id="mv">
+        <div class="container"></div>
+    </section>
     <section id="about">
         <div class="container flex-wrp-btw">
             <h2 class="common-ttl-h2">About</h2>
@@ -79,35 +82,7 @@
     <section id="contact">
         <div class="container">
             <h2 class="common-ttl-h2">Contact</h2>
-            <?php echo do_shortcode('[mwform_formkey key="5"]'); ?>
-            <div class="contact-form" hidden>
-                <table class="contact-form-tbl">
-                    <tr>
-                        <th>タイトル</th>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <th>お名前</th>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <th>メールアドレス</th>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <th>お問い合わせ内容</th>
-                        <td><textarea></textarea></td>
-                    </tr>
-                </table>
-                <div class="contact-from-check">
-                    <div class="privacypolicy">
-                    </div>
-                    <label><input type="checkbox"><span>利用規約に同意</span></label>
-                </div>
-                <div class="contact-from-send">
-                    <input type="button" value="send">
-                </div>
-            </div>
+            <?php echo do_shortcode('[contact-form-7 id="85" title="お問い合わせ"]'); ?>
         </div>
     </section>
 </main>

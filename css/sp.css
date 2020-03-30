@@ -6,6 +6,7 @@
         transform: translate(0,0);
         text-shadow: none;
     }
+    #mv {height: 20vh;}
     #about::after {transform: skewY(-5deg);}
     /* section blog */
     #blog::after {transform: skewY(5deg);}

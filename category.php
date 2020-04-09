@@ -15,7 +15,7 @@
                                     <?php if (has_post_thumbnail()) {
                                         the_post_thumbnail(array(300, 300));
                                     } else {
-                                        echo '<img src="' . get_stylesheet_directory_uri() . '/img/common/thumbnail-dummy.png" alt="サムネイルなし">';
+                                        echo '<img src="' . get_stylesheet_directory_uri() . '/img/common/thumbnail-dummy.svg" alt="サムネイルなし">';
                                     } ?>
                                 </div>
                                 <div class="post">

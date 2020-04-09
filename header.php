@@ -41,7 +41,20 @@
     <!-- ogp -->
     <meta property="og:locale" content="ja_JP">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="サイト説明文">
+    <?php if (is_single()) : ?>
+        <?php if ($post->post_excerpt) { ?>
+            <meta property="og:description" content="<? echo $post->post_excerpt; ?>">
+        <?php } else {
+            $summary = strip_tags($post->post_content);
+            $summary = str_replace("\n", "", $summary);
+            $summary = mb_substr($summary, 0, 120) . "…"; ?>
+            <meta property="og:description" content="<?php echo $summary; ?>">
+        <?php } ?>
+    <?php elseif (is_home() || is_front_page()) : ?>
+        <meta property="og:description" content="<?php bloginfo('description'); ?>">
+    <?php else : ?>
+        <meta property="og:description" content="<?php the_excerpt(); ?>">
+    <?php endif; ?>
     <meta property="og:title" content="<?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?>">
     <meta property="og:url" content="<?php echo get_the_permalink(); ?>">
     <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/common/site-img.png">
@@ -94,6 +107,18 @@
             s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162454798-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-162454798-1');
+    </script>
 </head>
 
 <body id="body">
@@ -113,7 +138,7 @@
                     <li><a href="<?php echo esc_url(home_url('/')) ?>archive">BLOG</a></li>
                     <li><a href="https://www.twitch.tv/dabaiosamu" target="_blank" rel="noopener">TWITCH</a></li>
                     <li><a href="https://twitter.com/dabaiosamu" target="_blank" rel="noopener">TWITTER</a></li>
-                    <li><a href="https://www.youtube.com/channel/UCNetO5A5Uc-Dk9wUnqm_PFw" target="_blank" rel="noopener">YouTube</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCNetO5A5Uc-Dk9wUnqm_PFw" target="_blank" rel="noopener">YOUTUBE</a></li>
                 </ul>
             </nav>
         </transition>

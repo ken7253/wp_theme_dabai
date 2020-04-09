@@ -17,7 +17,7 @@
                     配信スケジュール（Stream Schedule）<br>
                     だいたい夕方前後
                 </p>
-                <a class="readmore-btn" href="<?php echo esc_url(home_url('/')); ?>/about">read more</a>
+                <a class="readmore-btn" href="<?php echo esc_url(home_url('/')); ?>about">read more</a>
             </div>
             <div class="about-twitchtv">
                 <h3 class="common-ttl-h3">Twitch - dabaiosamu</h3>
@@ -31,12 +31,9 @@
         <div class="container">
             <h2 class="common-ttl-h2">Blog</h2>
             <div class="blog-list">
+                <?php if ( have_posts() ) : ?>
                 <ul class="flex-ard">
                     <!-- loop START -->
-                    <?php
-                    $args = array();
-                    $the_query = new WP_Query($args);
-                    ?>
                     <?php
                     $args = array(
                         'posts_per_page' => 5,
@@ -51,7 +48,7 @@
                                     <?php if (has_post_thumbnail()) {
                                         the_post_thumbnail(array(300, 300));
                                     } else {
-                                        echo '<img src="' . get_stylesheet_directory_uri() . '/img/common/thumbnail-dummy.png" alt="サムネイルなし">';
+                                        echo '<img src="' . get_stylesheet_directory_uri() . '/img/common/thumbnail-dummy.svg" alt="サムネイルなし">';
                                     } ?>
                                 </div>
                                 <div class="post">
@@ -64,7 +61,7 @@
                                                 echo 'post-new';
                                             endif; ?>">
                                         <?php the_title(); ?>
-                                        </span>
+                                    </span>
                                     <time class="post-date" datetime="<?php echo get_the_date(); ?>"><?php echo get_the_date(); ?></time>
                                 </div>
                             </a>
@@ -72,10 +69,13 @@
                     <?php endwhile;
                     wp_reset_postdata(); ?>
                 </ul>
+                <?php else : ?>
+                    <p>投稿はありません</p>
+                <?php endif; ?>
                 <!-- loop END -->
             </div>
             <div class="readmore">
-                <a class="readmore-btn" href="<?php echo esc_url(home_url('/')); ?>/archive">read more</a>
+                <a class="readmore-btn" href="<?php echo esc_url(home_url('/')); ?>archive">read more</a>
             </div>
         </div>
     </section>

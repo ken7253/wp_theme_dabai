@@ -100,7 +100,7 @@ main {padding: 50px 0;}
 ========================== */
 
 /* main-visual */
-#mv {background:center top url(http://localhost/dabai/wp-content/themes/dabai/img/common/main-visual.png) no-repeat;background-size: cover; height: 400px;}
+#mv {background:center top url(../img/common/main-visual.png) no-repeat;background-size: cover; height: 400px;}
 
 /* top-about */
 #about {margin: 0 0 150px 0;position: relative;z-index: 1;}
@@ -198,7 +198,7 @@ input,select,textarea,button{font-size: 100%; font-family: inherit;}
 .contact-from-check input[type="checkbox"]:checked + span::before{font-family: "Font Awesome 5 Free";content: '\f14a';font-weight: 500;vertical-align: middle;padding-right: 5px;}
 .contact-from-check label {cursor: pointer;}
 .contact-from-check .wpcf7-list-item {margin: 0;}
-.grecaptcha-badge {margin-bottom: 50px;}
+.grecaptcha-badge {margin-bottom: 50px;z-index: 1000;}
 
 /* ==========================
     END

@@ -1,11 +1,10 @@
 @media screen and (max-width:767px){
+    /* sp */
     .common-ttl-h2 {font-size: 3.75rem;}
-    .lower-ttl-h2 {font-size: 2rem;}
+    .lower-ttl-h2 {font-size: 2rem;margin: 0 auto 5vh;}
+    .ttl-horizon::before, .ttl-horizon::after {content: none;}
     .lower-ttl-h3 {font-size: 1.25rem;}
-    .social-nav li:hover {
-        transform: translate(0,0);
-        text-shadow: none;
-    }
+    .social-nav li:hover {transform: translate(0,0);text-shadow: none;}
     #mv {height: 20vh;}
     #about::after {transform: skewY(-5deg);}
     /* section blog */
@@ -16,6 +15,7 @@
 
 }
 @media screen and (min-width:767px){
+    /* pc */
     .container {padding: 0 15vw;margin: auto;}
     /* section about */
     .about-description {margin: 2.5em 3vw 1em 0;max-width: 500px;}

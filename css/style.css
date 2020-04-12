@@ -33,6 +33,9 @@ body {-webkit-font-feature-settings: "pwid"; font-feature-settings: "pwid"; lett
 .inline {display: inline;}
 .en {font-family: var(--en-font);}
 
+/* etc */
+mark {color: var(--text-color);background:linear-gradient(transparent 65%, var(--theme-color) 65%);font-weight: bolder;}
+
 /* ==========================
     TEMPLATE LAYOUT
 ========================== */
@@ -58,7 +61,13 @@ main {padding: 50px 0;}
 .container {padding: 0 2.5vw;margin: auto;}
 .lower-page {background-color: var(--theme-color);padding: 10vh 0;min-height: 100vh;}
 /* post page */
-
+#post a:hover {opacity: 0.8;}
+.post-content {background-color: var(--white-color);padding: 2vw;}
+.post-content .post-stats {text-align: end;font-size: .75rem;}
+.post-content .aligncenter {margin: auto;display: block;}
+.post-content .alignleft {margin-right: auto;display: block;}
+.post-content .alignright {margin-left: auto;display: block;}
+.archive-link {text-align: center;margin: 1rem 0;}
 /* single page */
 .about-content {background-color: var(--white-color);padding: 2vw;}
 /* archive page */
@@ -93,6 +102,11 @@ main {padding: 50px 0;}
 .lower-ttl-h2 span {font-family: var(--en-font); font-size: .5em;font-style: oblique;text-transform: uppercase;color: var(--accent-color);}
 .lower-ttl-h3 {font-size: 2rem;text-align: center;background-color: var(--sub-color);}
 
+.post-ttl {text-align: center;font-size: 2rem;margin-bottom: 1.5em;}
+.post-content h3 {border-bottom: solid 3px var(--theme-color); padding-left: .5em; margin-bottom: 1em;}
+.post-content h4 {background-color: var(--sub-color); padding-left: .5em; margin: 2em 0 1em;line-height: 2;}
+.post-content h5 {color: var(--accent-color);}
+.post-content h5::before {font-family: "Font Awesome 5 Free";content: '\f105';font-weight: 900;font-style: normal;padding-right: .5em;}
 /* ==========================
     TOP PAGE LAYOUT
 ========================== */

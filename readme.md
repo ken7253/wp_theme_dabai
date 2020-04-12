@@ -12,7 +12,7 @@ The color theme of this site is stored in a variable in "style.css"
 Use [AdobeFonts](https://fonts.adobe.com/) and [fontawesome](https://fontawesome.com/)  
 sans-serif preferentially.  
 1. futura-pt  
-2. ryo-gothic-plusn  
+2. tbudgothic-std
   
 ### responsive
 The breakpoint on this site is 767px.  

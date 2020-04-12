@@ -77,6 +77,7 @@
     <!-- vue dev mode -->
     <script rel="preload" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Adobe fonts -->
     <script>
         (function(d) {
             var config = {

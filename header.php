@@ -66,7 +66,6 @@
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/img/common/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
     <!-- stylesheet -->
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/reboot.css" rel="stylesheet" type="text/css">
-    <link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css" rel="stylesheet" type="text/css">
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/animation.css" rel="stylesheet" type="text/css">
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/sp.css" rel="stylesheet" type="text/css">
@@ -74,11 +73,12 @@
     <!--[if lt IE 9]>
     <script src="/js/html5shiv.min.js"></script>
     <![endif]-->
-    <!-- vue dev mode -->
-    <script rel="preload" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- vue dev mode <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/a1b8214513.js" crossorigin="anonymous"></script>
     <!-- Adobe fonts -->
-    <script>
+    <script defer>
         (function(d) {
             var config = {
                     kitId: 'rrt1gej',

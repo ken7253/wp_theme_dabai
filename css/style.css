@@ -49,6 +49,7 @@ mark {color: var(--text-color);background:linear-gradient(transparent 65%, var(-
 .main-nav li {margin-top: 10px;}
 .main-nav li a {color: var(--white-color);}
 .main-nav li:first-child {margin: 0;}
+
 /* footer */
 footer .copyright {width: 100%;margin-bottom: 50px;background-color: var(--text-color);color: var(--white-color);font-family: var(--en-font);font-size: 0.75rem;text-transform: uppercase;text-align: center;}
 .social-nav {width: 100vw; height: 50px; position: fixed; bottom: 0; background-color: var(--sub-color);z-index: 1001;}
@@ -56,10 +57,12 @@ footer .copyright {width: 100%;margin-bottom: 50px;background-color: var(--text-
 .social-nav ul li {width: 50px; text-align: center;}
 .social-nav a {display: block;}
 .social-nav .fab, .social-nav .fas {font-size: 1.5rem;line-height: 2.2;}
+
 /* layout */
 main {padding: 50px 0;}
 .container {padding: 0 2.5vw;margin: auto;}
 .lower-page {background-color: var(--theme-color);padding: 10vh 0;min-height: 100vh;}
+
 /* post page */
 #post a:hover {opacity: 0.8;}
 .post-content {background-color: var(--white-color);padding: 2vw;}
@@ -67,6 +70,10 @@ main {padding: 50px 0;}
 .post-content .aligncenter {margin: auto;display: block;}
 .post-content .alignleft {margin-right: auto;display: block;}
 .post-content .alignright {margin-left: auto;display: block;}
+.post-content .archive-link {text-align: center;margin: 1rem 0;}
+.post-content .archive-link ul {padding: 25px 1vw; margin: 0; border-top: solid 2px var(--sub-color);}
+.post-content .archive-link ul li {list-style-type: none;width: -webkit-calc( 100% / 3 );width: calc( 100% / 3 );}
+
 .share-btn {background-color: var(--theme-color);}
 .share-btn p {margin: 0;padding: 0;color: var(--white-color);text-align: center;}
 .share-btn ul {display: flex;list-style-type: none;margin: 0;padding: 0;}
@@ -75,13 +82,15 @@ main {padding: 50px 0;}
 .share-btn a {color: var(--white-color);display: block;line-height: 2.5;}
 .share-twitter {background-color: #1DA1F2;}
 .share-pocket {background-color: #EE4056;}
-.archive-link {text-align: center;margin: 1rem 0;}
+
 /* single page */
 .about-content {background-color: var(--white-color);padding: 2vw;}
+
 /* archive page */
 .archive-content {background-color: var(--white-color);padding: 2vw;}
 .archive-content ul {flex-direction: column;}
 .archive-content .thumbnail {width: 150px;height: auto;margin-right: 10px;}
+
 /* pager */
 .pagination {display: flex;align-items: center;justify-content: center;font-family: var(--en-font);font-style: oblique;font-size: 1rem;margin: 20px 0;position: relative;}
 .pagination span, .pagination a {display: block;width: auto;margin: 4px;padding: 8px;border: 3px solid var(--accent-color);background-color: var(--white-color);text-decoration: none;text-align: center;line-height: 16px;}
@@ -90,6 +99,7 @@ main {padding: 50px 0;}
 .pagination a.prev {margin-right: 16px;}
 .pagination a.next {margin-left: 16px;}
 .pagination span.page_num {display: none;}
+
 /* 404 page */
 .notfound-content {background-color: var(--white-color);padding: 2vw;}
 
@@ -160,8 +170,8 @@ input,select,textarea,button{font-size: 100%; font-family: inherit;}
 .contact-from-check,.contact-from-send {text-align: center;margin: 10px 0;}
 .contact-from-send input {font-family: var(--en-font);font-style: oblique;text-transform: uppercase;color: var(--theme-color);background-color: var(--white-color);border: solid 3px;padding: 5px 45px;}
 .contact-from-check input[type="checkbox"] {opacity:0;-webkit-appearance: none;appearance: none;position: absolute;}
-.contact-from-check input[type="checkbox"] + span::before {font-family: "Font Awesome 5 Free";content: '\f0c8';font-weight: 500;vertical-align: middle;padding-right: 5px;}
-.contact-from-check input[type="checkbox"]:checked + span::before{font-family: "Font Awesome 5 Free";content: '\f14a';font-weight: 500;vertical-align: middle;padding-right: 5px;}
+.contact-from-check input[type="checkbox"] + span::before {font-family: "Font Awesome 5 Free";content: '\f0c8';font-weight: 400;vertical-align: middle;padding-right: 5px;}
+.contact-from-check input[type="checkbox"]:checked + span::before{font-family: "Font Awesome 5 Free";content: '\f14a';font-weight: 400;vertical-align: middle;padding-right: 5px;}
 .contact-from-check label {cursor: pointer;}
 .contact-from-check .wpcf7-list-item {margin: 0;}
 .grecaptcha-badge {margin-bottom: 50px;z-index: 1000;}

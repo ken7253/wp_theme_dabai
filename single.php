@@ -9,23 +9,26 @@
                         <p><?php the_category(', '); ?></p>
                     </div>
                     <p><?php the_content('Read more'); ?></p>
+                    <div class="archive-link">
+                        <ul class="flex-btw">
+                            <li><?php next_post_link('%link', '≪新しい記事へ'); ?></li>
+                            <li><a href="<?php echo esc_url(home_url('/')) ?>archive">投稿一覧</a></li>
+                            <li><?php previous_post_link('%link', '古い記事へ≫'); ?></li>
+                        </ul>
+                    </div>
                     <div class="share-btn">
                         <p>-SHARE-</p>
                         <ul>
                             <li class="share-twitter">
                                 <a href="https://twitter.com/share?url=<?php echo get_the_permalink(); ?>&via=dabaiosamu&text=<?php echo get_the_title(); ?>" target="_blank" rel="noopener">
-                                <i class="fab fa-twitter"></i>Tweet</a></li>
+                                    <i class="fab fa-twitter"></i>Tweet</a></li>
                             <li class="share-pocket">
                                 <a href="http://getpocket.com/edit?url=<?php echo get_the_permalink(); ?>&title=<?php echo get_the_title(); ?>|ダバイ治" rel="nofollow" rel="nofollow" target="_blank">
-                                <i class="fab fa-get-pocket"></i>Pocket</a></li>
+                                    <i class="fab fa-get-pocket"></i>Pocket</a></li>
                         </ul>
                     </div>
-                    <?php previous_post_link('%link', '古い記事へ'); ?>
-                    <?php next_post_link('%link', '新しい記事へ'); ?>
-            <?php endwhile;endif; ?>
-                </div>
-                <div class="archive-link">
-                    <a href="<?php echo esc_url(home_url('/')) ?>archive">投稿一覧</a>
+            <?php endwhile;
+        endif; ?>
                 </div>
     </div>
 </article>

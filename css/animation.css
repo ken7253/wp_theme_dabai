@@ -37,6 +37,11 @@
     border-color: var(--theme-color);
     background-color: var(--theme-color);
 }
+#post .share-btn a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: transform ease-in-out 200ms;
+}
 /* use with Vue.js */
 .fadeTop-enter-active, .fadeTop-leave-active {
     transition: opacity .5s;

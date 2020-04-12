@@ -67,6 +67,14 @@ main {padding: 50px 0;}
 .post-content .aligncenter {margin: auto;display: block;}
 .post-content .alignleft {margin-right: auto;display: block;}
 .post-content .alignright {margin-left: auto;display: block;}
+.share-btn {background-color: var(--theme-color);}
+.share-btn p {margin: 0;padding: 0;color: var(--white-color);text-align: center;}
+.share-btn ul {display: flex;list-style-type: none;margin: 0;padding: 0;}
+.share-btn ul li {width: 50%;text-align: center;}
+.share-btn i {padding-right: .5em;}
+.share-btn a {color: var(--white-color);display: block;line-height: 2.5;}
+.share-twitter {background-color: #1DA1F2;}
+.share-pocket {background-color: #EE4056;}
 .archive-link {text-align: center;margin: 1rem 0;}
 /* single page */
 .about-content {background-color: var(--white-color);padding: 2vw;}

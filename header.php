@@ -43,7 +43,7 @@
     <meta property="og:type" content="website">
     <?php if (is_single()) : ?>
         <?php if ($post->post_excerpt) { ?>
-            <meta property="og:description" content="<? echo $post->post_excerpt; ?>">
+            <meta property="og:description" content="<?php echo $post->post_excerpt; ?>">
         <?php } else {
             $summary = strip_tags($post->post_content);
             $summary = str_replace("\n", "", $summary);

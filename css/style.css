@@ -74,6 +74,9 @@ main {padding: 50px 0;}
 .post-content .archive-link ul {padding: 25px 1vw; margin: 0; border-top: solid 2px var(--sub-color);}
 .post-content .archive-link ul li {list-style-type: none;width: -webkit-calc( 100% / 3 );width: calc( 100% / 3 );}
 
+.post-content img,.post-content iframe,.post-content video {max-width: 100%;height: auto;}
+.post-content a {overflow-wrap: break-word;}
+
 .share-btn {background-color: var(--theme-color);}
 .share-btn p {margin: 0;padding: 0;color: var(--white-color);text-align: center;}
 .share-btn ul {display: flex;list-style-type: none;margin: 0;padding: 0;}

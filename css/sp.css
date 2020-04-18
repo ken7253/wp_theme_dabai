@@ -5,6 +5,7 @@
     .ttl-horizon::before, .ttl-horizon::after {content: none;}
     .lower-ttl-h3 {font-size: 1.25rem;}
     .post-ttl {font-size: 1.5rem;margin-top: 1.5em;}
+    .post-content iframe {height: fit-content;}
     .social-nav li:hover {transform: translate(0,0);text-shadow: none;}
     #mv {height: 20vh;}
     #about::after {transform: skewY(-5deg);}

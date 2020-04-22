@@ -178,7 +178,9 @@ input,select,textarea,button{font-size: 100%; font-family: inherit;}
 .contact-from-check input[type="checkbox"]:checked + span::before{font-family: "Font Awesome 5 Free";content: '\f14a';font-weight: 400;vertical-align: middle;padding-right: 5px;}
 .contact-from-check label {cursor: pointer;}
 .contact-from-check .wpcf7-list-item {margin: 0;}
-.grecaptcha-badge {margin-bottom: 50px;z-index: 1000;}
+.reCAPTCHA-policy {display: flex;}
+.reCAPTCHA-policy p {margin: auto; opacity: 0.7; font-size: .5rem; display: block;}
+.grecaptcha-badge {visibility: hidden;}
 
 /* ==========================
     LOWER PAGE LAYOUT

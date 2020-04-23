@@ -78,6 +78,9 @@ main {padding: 50px 0;}
 .post-content iframe {max-width: 100%;}
 .post-content a {overflow-wrap: break-word;}
 
+.post-content table {border: solid 3px var(--text-color);margin-bottom: 1em;}
+.post-content table td {border: solid 1px var(--text-color);}
+
 .share-btn {background-color: var(--theme-color);}
 .share-btn p {margin: 0;padding: 0;color: var(--white-color);text-align: center;}
 .share-btn ul {display: flex;list-style-type: none;margin: 0;padding: 0;}

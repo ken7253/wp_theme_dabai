@@ -179,7 +179,7 @@ input,select,textarea,button{font-size: 100%; font-family: inherit;}
 .contact-from-check label {cursor: pointer;}
 .contact-from-check .wpcf7-list-item {margin: 0;}
 .reCAPTCHA-policy {display: flex;}
-.reCAPTCHA-policy p {margin: auto; opacity: 0.7; font-size: .5rem; display: block;}
+.reCAPTCHA-policy p {margin: auto; opacity: 0.7; font-size: .5rem; display: block; border-left: solid 7px var(--accent-color); padding: 5px 10px; background-color: var(--sub-color);}
 .grecaptcha-badge {visibility: hidden;}
 
 /* ==========================
@@ -190,3 +190,13 @@ input,select,textarea,button{font-size: 100%; font-family: inherit;}
 .lower-page .about-social {font-size: 1.5rem;text-align: center;font-family: var(--en-font);list-style-type: none;margin: 0;padding: 0 0 30px 0;}
 .lower-page .about-social a {display: block;}
 .lower-page .about-social i {font-size: 2em;}
+
+/* ==========================
+    DARK MODE
+========================== */
+@media (prefers-color-scheme: dark) {
+    .header-container { background-color: var(--text-color); color: var(--sub-color);}
+    .common-ttl-h1 { color: var(--sub-color);}
+    .social-nav { background-color: var(--text-color);}
+    .social-nav a { color: var(--sub-color);}
+}

@@ -87,6 +87,10 @@ main {padding: 50px 0;}
 .share-twitter {background-color: #1DA1F2;}
 .share-pocket {background-color: #EE4056;}
 
+.other-post-link {margin-top: 50px;}
+.other-post-link h3 {font-size: 1.5rem;}
+.other-post-link h3 i {padding-right: .25em;}
+
 /* single page */
 .about-content {background-color: var(--white-color);padding: 2vw;}
 

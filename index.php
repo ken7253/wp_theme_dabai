@@ -53,7 +53,7 @@
                                 </div>
                                 <div class="post">
                                     <span class="post-title <?php
-                                            $days = 14;
+                                            $days = 7;
                                             $today = date_i18n('U');
                                             $entry_day = get_the_time('U');
                                             $keika = date('U', ($today - $entry_day)) / 86400;

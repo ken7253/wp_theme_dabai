@@ -22,7 +22,7 @@
             <div class="about-twitchtv">
                 <h3 class="common-ttl-h3">Twitch - dabaiosamu</h3>
                 <div class="twitchtv">
-                    <iframe src="https://player.twitch.tv/?channel=dabaiosamu" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+                    <iframe src="https://player.twitch.tv/?channel=dabaiosamu&muted=true" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
                 </div>
             </div>
         </div>

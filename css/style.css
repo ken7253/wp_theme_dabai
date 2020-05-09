@@ -1,5 +1,6 @@
 @charset "UTF-8";
 html {scroll-behavior: smooth;}
+::selection {background: var(--accent-color); color: var(--white-color);}
 /* site color setting */
 :root {
     --theme-color: #F2C078;
@@ -40,7 +41,7 @@ mark {color: var(--text-color);background:linear-gradient(transparent 65%, var(-
     TEMPLATE LAYOUT
 ========================== */
 /* header */
-#header {position: fixed;top: 0;left: 0;width: 100vw;z-index: 1000;}
+header {position: fixed;top: 0;left: 0;width: 100vw;z-index: 1000;}
 .header-container {background-color: var(--sub-color);width: 100%;height: 50px;padding: 0 2.5vw;display: flex;justify-content: center;align-items: center;position: relative;z-index: 1001;}
 .header-container .common-ttl-h1 {position: absolute;top: 0;left: 0;width: 100%;}
 .hum-menu {position: absolute;right: 3vw;font-size: 1.5rem;padding: 8px;cursor: pointer;}

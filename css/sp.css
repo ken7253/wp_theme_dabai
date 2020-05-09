@@ -25,10 +25,10 @@
     .about-twitchtv {max-width: 500px;}
     /* section blog */
     #blog .blog-list .post-container {height: 100%; flex-direction: column;margin: 0;padding: 0 0 10px 0;}
-    #blog .blog-list .post-container .post-title {margin: 0 .5em;}
+    #blog .blog-list .post-container .post-title {margin: 0 8px;}
     #blog .blog-list li {max-width: 300px; margin: 5px;}
     #blog .blog-list .post-date {text-align: end;margin: .5em .5em 0 .5em;}
-    #blog .blog-list .post-new::before {display: block;}
+    #blog .blog-list .post-new::before {display: block;margin: 0 -8px .25em;}
     /* section contact */
 
     /* single page */

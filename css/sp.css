@@ -16,10 +16,12 @@
     .blog-list .thumbnail img {width: 50px; height: 50px;}
     .blog-list .post {margin-left: 10px;}
     .post-content .archive-link ul {font-size: .75rem;}
+    /* section video */
+    .hooper-slide img {width: 40vw;}
 }
 @media screen and (min-width:767px){
     /* pc */
-    .container {padding: 0 15vw;margin: auto;}
+    .container {padding: 0 15vw 50px;margin: auto;}
     /* section about */
     .about-description {margin: 2.5em 3vw 1em 0;max-width: 500px;}
     .about-twitchtv {max-width: 500px;}
@@ -29,6 +31,9 @@
     #blog .blog-list li {max-width: 300px; margin: 5px;}
     #blog .blog-list .post-date {text-align: end;margin: .5em .5em 0 .5em;}
     #blog .blog-list .post-new::before {display: block;margin: 0 -8px .25em;}
+    /* section video */
+    #video {margin: 250px 0;}
+    #video .video-over-container {width: 100vw; margin-left: -15vw;}
     /* section contact */
 
     /* single page */

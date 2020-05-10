@@ -7,6 +7,9 @@ The color theme of this site is stored in a variable in "style.css"
 - --accent-color: #EB5D2D;  
 - --text-color: #584A3D;  
 - --sub-color: #FAEDCA;  
+- --white-color: #FFF;  
+- --en-font: futura-pt, sans-serif;  
+- --ja-font: tbudgothic-std, sans-serif;  
 
 ### font
 Use [AdobeFonts](https://fonts.adobe.com/) and [fontawesome](https://fontawesome.com/)  
@@ -47,7 +50,8 @@ The following classes are prepared as general-purpose classes.
 ### JavaScript  
 - [html5shiv.js](https://github.com/aFarkas/html5shiv)  
 - [vue.js](https://jp.vuejs.org/)  
-- [axios](https://github.com/axios/axios) *use futures*  
+- [axios](https://github.com/axios/axios)
+- [hooper](https://baianat.github.io/hooper/)
 See /js/v-script.js for Vue.js file  
 I use "html5shiv.js" to support Internet Explorer. I don't really want to respond.  
   

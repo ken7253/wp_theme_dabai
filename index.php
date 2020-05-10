@@ -31,44 +31,44 @@
         <div class="container">
             <h2 class="common-ttl-h2">Blog</h2>
             <div class="blog-list">
-                <?php if ( have_posts() ) : ?>
-                <ul class="flex-ard">
-                    <!-- loop START -->
-                    <?php
-                    $args = array(
-                        'posts_per_page' => 5,
-                        'orderby' => 'date',
-                    );
-                    $the_query = new WP_Query($args);
-                    while ($the_query->have_posts()) : $the_query->the_post();
-                    ?>
-                        <li>
-                            <a class="post-container flex" href="<?php the_permalink(); ?>">
-                                <div class="thumbnail">
-                                    <?php if (has_post_thumbnail()) {
-                                        the_post_thumbnail(array(300, 300));
-                                    } else {
-                                        echo '<img src="' . get_stylesheet_directory_uri() . '/img/common/thumbnail-dummy.svg" alt="サムネイルなし">';
-                                    } ?>
-                                </div>
-                                <div class="post">
-                                    <span class="post-title <?php
-                                            $days = 7;
-                                            $today = date_i18n('U');
-                                            $entry_day = get_the_time('U');
-                                            $keika = date('U', ($today - $entry_day)) / 86400;
-                                            if ($days > $keika) :
-                                                echo 'post-new';
-                                            endif; ?>">
-                                        <?php the_title(); ?>
-                                    </span>
-                                    <time class="post-date" datetime="<?php echo get_the_date(); ?>"><?php echo get_the_date(); ?></time>
-                                </div>
-                            </a>
-                        </li>
-                    <?php endwhile;
-                    wp_reset_postdata(); ?>
-                </ul>
+                <?php if (have_posts()) : ?>
+                    <ul class="flex-ard">
+                        <!-- loop START -->
+                        <?php
+                        $args = array(
+                            'posts_per_page' => 5,
+                            'orderby' => 'date',
+                        );
+                        $the_query = new WP_Query($args);
+                        while ($the_query->have_posts()) : $the_query->the_post();
+                        ?>
+                            <li>
+                                <a class="post-container flex" href="<?php the_permalink(); ?>">
+                                    <div class="thumbnail">
+                                        <?php if (has_post_thumbnail()) {
+                                            the_post_thumbnail(array(300, 300));
+                                        } else {
+                                            echo '<img src="' . get_stylesheet_directory_uri() . '/img/common/thumbnail-dummy.svg" alt="サムネイルなし">';
+                                        } ?>
+                                    </div>
+                                    <div class="post">
+                                        <span class="post-title <?php
+                                                                $days = 7;
+                                                                $today = date_i18n('U');
+                                                                $entry_day = get_the_time('U');
+                                                                $keika = date('U', ($today - $entry_day)) / 86400;
+                                                                if ($days > $keika) :
+                                                                    echo 'post-new';
+                                                                endif; ?>">
+                                            <?php the_title(); ?>
+                                        </span>
+                                        <time class="post-date" datetime="<?php echo get_the_date(); ?>"><?php echo get_the_date(); ?></time>
+                                    </div>
+                                </a>
+                            </li>
+                        <?php endwhile;
+                        wp_reset_postdata(); ?>
+                    </ul>
                 <?php else : ?>
                     <p>投稿はありません</p>
                 <?php endif; ?>
@@ -76,6 +76,36 @@
             </div>
             <div class="readmore">
                 <a class="readmore-btn" href="<?php echo esc_url(home_url('/')); ?>archive">read more</a>
+            </div>
+        </div>
+    </section>
+    <section id="video">
+        <div class="container">
+            <div id="videoList">
+                <h2 class="common-ttl-h2">Videos</h2>
+                <div v-if="errored">
+                    <p>最新動画一覧のデータを取得できませんでした。</p>
+                </div>
+                <div v-else>
+                    <div v-if="loading">Loading...</div>
+                    <div v-else class="video-over-container">
+                        <hooper :settings="{
+                            itemsToShow: 3,
+                            shortDrag: false,
+                            infiniteScroll: true,
+                            wheelControl: false,
+                            autoPlay: true,
+                            playSpeed: 3000,
+                            transition: 1000
+                            }">
+                            <slide v-for="video in videos" :key="video.Id">
+                                <a v-bind:href=" 'https://www.youtube.com/watch?v=' + video.snippet.resourceId.videoId" target="_blank" rel="noopener">
+                                    <img v-bind:src="video.snippet.thumbnails.maxres.url" v-bind:alt="video.snippet.title">
+                                </a>
+                            </slide>
+                        </hooper>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

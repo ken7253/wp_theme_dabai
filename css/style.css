@@ -142,7 +142,7 @@ main {padding: 50px 0;}
 ========================== */
 
 /* main-visual */
-#mv {background:center top url(../img/common/main-visual.png) no-repeat;background-size: cover; height: 400px;}
+#mv {background:center top url(../img/common/main-visual.jpg) no-repeat;background-size: cover; height: 400px;}
 
 /* top-about */
 #about {margin: 0 0 100px 0;position: relative;z-index: 1;}

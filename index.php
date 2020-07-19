@@ -17,12 +17,12 @@
                     配信スケジュール（Stream Schedule）<br>
                     だいたい夕方前後
                 </p>
-                <a class="readmore-btn" href="<?php echo esc_url(home_url('/')); ?>about">read more</a>
+                <a aria-label="自己紹介ページへ" title="自己紹介ページへ" class="readmore-btn" href="<?php echo esc_url(home_url('/')); ?>about">read more</a>
             </div>
             <div class="about-twitchtv">
                 <h3 class="common-ttl-h3">Twitch - dabaiosamu</h3>
                 <div class="twitchtv">
-                <iframe src="https://player.twitch.tv/?channel=dabaiosamu&parent=dabaiosamu.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+                <iframe title="Twitchページ" src="https://player.twitch.tv/?channel=dabaiosamu&parent=dabaiosamu.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@
                 <!-- loop END -->
             </div>
             <div class="readmore">
-                <a class="readmore-btn" href="<?php echo esc_url(home_url('/')); ?>archive">read more</a>
+                <a aria-label="記事一覧ページへ" title="記事一覧ページへ" class="readmore-btn" href="<?php echo esc_url(home_url('/')); ?>archive">read more</a>
             </div>
         </div>
     </section>

@@ -83,3 +83,11 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 </script>
 EOD;
 }
+
+function load_google_cdn() {
+    if ( !is_admin() ){
+      wp_deregister_script( 'jquery' );
+      wp_enqueue_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array(), NULL, true );
+    }
+  }
+  add_action( 'init', 'load_google_cdn' );

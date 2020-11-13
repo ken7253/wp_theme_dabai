@@ -112,7 +112,7 @@
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162454798-1"></script>
-    <script>
+    <script async>
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {

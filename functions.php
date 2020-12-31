@@ -9,6 +9,14 @@ add_theme_support('html5', array(
   'gallery',
   'caption',
 ));
+// jQueryの読み込みをGoogleCDNに変更 -> Header
+add_action( 'wp_enqueue_scripts', function() {
+    if ( is_admin() === false ) {
+      wp_deregister_script( 'jquery' );
+      wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', false, '3.4.1', false );
+      wp_enqueue_script( 'jquery' );
+    }
+  });
 // バージョン情報削除
 remove_action('wp_head', 'wp_generator');
 remove_action('wp_head', 'wlwmanifest_link');
@@ -83,11 +91,3 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 </script>
 EOD;
 }
-
-function load_google_cdn() {
-    if ( !is_admin() ){
-      wp_deregister_script( 'jquery' );
-      wp_enqueue_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array(), NULL, true );
-    }
-  }
-  add_action( 'init', 'load_google_cdn' );

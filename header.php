@@ -16,6 +16,7 @@
         <?php } else {
             $summary = strip_tags($post->post_content);
             $summary = str_replace("\n", "", $summary);
+            $summary = str_replace("\"", "'", $summary);
             $summary = mb_substr($summary, 0, 120) . "…"; ?>
             <meta name="description" content="<?php echo $summary; ?>">
         <?php } ?>
@@ -43,12 +44,13 @@
     <meta property="og:type" content="website">
     <?php if (is_single()) : ?>
         <?php if ($post->post_excerpt) { ?>
-            <meta property="og:description" content="<?php echo $post->post_excerpt; ?>">
+    <meta property="og:description" content="<?php echo $post->post_excerpt; ?>">
         <?php } else {
             $summary = strip_tags($post->post_content);
             $summary = str_replace("\n", "", $summary);
+            $summary = str_replace("\"", "'", $summary);
             $summary = mb_substr($summary, 0, 120) . "…"; ?>
-            <meta property="og:description" content="<?php echo $summary; ?>">
+    <meta property="og:description" content="<?php echo $summary; ?>">
         <?php } ?>
     <?php elseif (is_home() || is_front_page()) : ?>
         <meta property="og:description" content="<?php bloginfo('description'); ?>">

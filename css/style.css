@@ -78,6 +78,7 @@ main {padding: 50px 0;}
 .post-content img,.post-content video {max-width: 100%;height: auto;}
 .post-content iframe {max-width: 100%;}
 .post-content a {overflow-wrap: break-word;}
+.post-content p {line-height: 2.1;}
 
 .post-content table {border: solid 3px var(--text-color);margin-bottom: 1em;}
 .post-content table td {border: solid 1px var(--text-color);}
@@ -94,6 +95,12 @@ main {padding: 50px 0;}
 .other-post-link {margin-top: 50px;}
 .other-post-link h3 {font-size: 1.5rem;}
 .other-post-link h3 i {padding-right: .25em;}
+
+/* Amazonアソシエイトリンク */
+.cstmreba { border: 3px var(--text-color) double; padding: 10px; background-color: var(--sub-color);}
+.kaerebalink-box { display: flex; flex-wrap: wrap;}
+.kaerebalink-image {margin-right: 10px;}
+.kaerebalink-info {max-width: 500px;}
 
 /* single page */
 .about-content {background-color: var(--white-color);padding: 2vw;}

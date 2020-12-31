@@ -56,7 +56,7 @@
         <meta property="og:description" content="<?php the_excerpt(); ?>">
     <?php endif; ?>
     <meta property="og:title" content="<?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?>">
-    <meta property="og:url" content="<?php echo get_the_permalink(); ?>">
+    <meta property="og:url" content="<?php echo $canonical_url; ?>">
     <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/common/site-img.png">
     <meta property="og:site_title" content="<?php bloginfo('name'); ?>">
     <meta name="twitter:card" content="summary">

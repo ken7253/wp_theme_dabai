@@ -3,13 +3,13 @@ html {scroll-behavior: smooth;}
 ::selection {background: var(--accent-color); color: var(--white-color);}
 /* site color setting */
 :root {
-    --theme-color: #F2C078;
-    --accent-color: #EB5D2D;
-    --text-color: #584A3D;
-    --sub-color: #FAEDCA;
-    --white-color: #FFF;
-    --en-font: futura-pt, sans-serif;
-    --ja-font: tbudgothic-std, sans-serif;
+  --theme-color: #F2C078;
+  --accent-color: #EB5D2D;
+  --text-color: #584A3D;
+  --sub-color: #FAEDCA;
+  --white-color: #FFF;
+  --en-font: futura-pt, sans-serif;
+  --ja-font: tbudgothic-std, sans-serif;
 }
 /* overwrite reboot.css */
 body {color: var(--text-color); font-family: var(--ja-font);}
@@ -38,7 +38,7 @@ body {-webkit-font-feature-settings: "pwid"; font-feature-settings: "pwid"; lett
 mark {color: var(--text-color);background:linear-gradient(transparent 65%, var(--theme-color) 65%);font-weight: bolder;}
 
 /* ==========================
-    TEMPLATE LAYOUT
+  TEMPLATE LAYOUT
 ========================== */
 /* header */
 header {position: fixed;top: 0;left: 0;width: 100vw;z-index: 1000;}
@@ -123,7 +123,7 @@ main {padding: 50px 0;}
 .notfound-content {background-color: var(--white-color);padding: 2vw;}
 
 /* ==========================
-    HEADING STYLE
+  HEADING STYLE
 ========================== */
 .ttl-horizon {display: flex;align-items: center; text-align: center;}
 .ttl-horizon::before,.ttl-horizon::after {content: '';height: 2px;background-color: var(--text-color);flex-grow: 1;margin: 0 2rem;}
@@ -145,7 +145,7 @@ main {padding: 50px 0;}
 .post-content h5 {color: var(--accent-color);}
 .post-content h5::before {font-family: "Font Awesome 5 Free";content: '\f105';font-weight: 900;font-style: normal;padding-right: .5em;}
 /* ==========================
-    TOP PAGE LAYOUT
+  TOP PAGE LAYOUT
 ========================== */
 
 /* main-visual */
@@ -157,7 +157,7 @@ main {padding: 50px 0;}
 .about-description {margin-bottom: 2rem;}
 .about-description .readmore-btn {margin: auto;}
 .about-twitchtv {width: 100%;}
-.twitchtv {width:100%;padding-bottom: 56.25%;height:0px;position: relative;}
+.twitchtv {width:100%;padding-bottom: 56.25%;height:0;position: relative;}
 .twitchtv iframe {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
 
 /* top-blog */
@@ -207,7 +207,7 @@ input,select,textarea,button{font-size: 100%; font-family: inherit;}
 .grecaptcha-badge {visibility: hidden;}
 
 /* ==========================
-    LOWER PAGE LAYOUT
+  LOWER PAGE LAYOUT
 ========================== */
 
 /* about */
@@ -216,11 +216,11 @@ input,select,textarea,button{font-size: 100%; font-family: inherit;}
 .lower-page .about-social i {font-size: 2em;}
 
 /* ==========================
-    DARK MODE
+  DARK MODE
 ========================== */
 @media (prefers-color-scheme: dark) {
-    .header-container { background-color: var(--text-color); color: var(--sub-color);}
-    .common-ttl-h1 { color: var(--sub-color);}
-    .social-nav { background-color: var(--text-color);}
-    .social-nav a { color: var(--sub-color);}
+  .header-container { background-color: var(--text-color); color: var(--sub-color);}
+  .common-ttl-h1 { color: var(--sub-color);}
+  .social-nav { background-color: var(--text-color);}
+  .social-nav a { color: var(--sub-color);}
 }

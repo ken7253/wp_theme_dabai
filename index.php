@@ -100,7 +100,7 @@
                             }">
               <slide v-for="video in videos" :key="video.Id">
                 <a v-bind:href=" 'https://www.youtube.com/watch?v=' + video.snippet.resourceId.videoId" target="_blank" rel="noopener">
-                  <img v-bind:src="video.snippet.thumbnails.maxres.url" v-bind:alt="video.snippet.title">
+                  <img v-bind:src="video.snippet.thumbnails.high.url" v-bind:alt="video.snippet.title">
                 </a>
               </slide>
             </hooper>

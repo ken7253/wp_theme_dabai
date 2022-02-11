@@ -82,7 +82,7 @@
 <script src="/js/html5shiv.min.js"></script>
 <![endif]-->
   <!-- vue dev mode <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.13/dist/vue.min.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/hooper/dist/hooper.min.js"></script>
   <script src="https://kit.fontawesome.com/a1b8214513.js" crossorigin="anonymous"></script>

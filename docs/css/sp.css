@@ -1,0 +1,41 @@
+@media screen and (max-width:767px){
+  /* sp */
+  .common-ttl-h2 {font-size: 3.75rem;}
+  .lower-ttl-h2 {font-size: 2rem;margin: 0 auto 5vh;}
+  .ttl-horizon::before, .ttl-horizon::after {content: none;}
+  .lower-ttl-h3 {font-size: 1.25rem;}
+  .post-ttl {font-size: 1.5rem;margin-top: 1.5em;}
+  .post-content iframe {height: fit-content;}
+  .social-nav li:hover {transform: translate(0,0);text-shadow: none;}
+  #mv {height: 20vh;}
+  #about::after {transform: skewY(-5deg);}
+  /* section blog */
+  #blog::after {transform: skewY(5deg);}
+  .blog-list ul {display: block;}
+  .blog-list .thumbnail {width: 50px;height: 50px;}
+  .blog-list .thumbnail img {width: 50px; height: 50px;}
+  .blog-list .post {margin-left: 10px;}
+  .post-content .archive-link ul {font-size: .75rem;}
+  /* section video */
+  .hooper-slide img {width: 40vw;}
+}
+@media screen and (min-width:767px){
+  /* pc */
+  .container {padding: 0 15vw 50px;margin: auto;}
+  /* section about */
+  .about-description {margin: 2.5em 3vw 1em 0;max-width: 500px;}
+  .about-twitchtv {max-width: 500px;}
+  /* section blog */
+  #blog .blog-list .post-container {height: 100%; flex-direction: column;margin: 0;padding: 0 0 10px 0;}
+  #blog .blog-list .post-container .post-title {margin: 0 8px;height: calc(100% - 1.5em);}
+  #blog .blog-list li {max-width: 300px; margin: 5px; width: calc(100% / 5);}
+  #blog .blog-list .post-date {text-align: end;margin: .5em .5em 0 .5em;}
+  #blog .blog-list .post-new::before {display: block;margin: 0 -8px .25em;}
+  /* section video */
+  #video {margin: 250px 0;}
+  #video .video-over-container {width: 100vw; margin-left: -15vw;}
+  /* section contact */
+
+  /* single page */
+  .other-post-link .thumbnail img { width: 100px; height: 100px; margin-right: 15px;}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "wp_theme_dabai",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ken7253/wp_theme_dabai.git"
+  },
+  "author": "ken7253 <ken7253@gmail.com> (https://dairoku-studio.com/)",
+  "bugs": {
+    "url": "https://github.com/ken7253/wp_theme_dabai/issues"
+  },
+  "homepage": "https://github.com/ken7253/wp_theme_dabai#readme",
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "npm-run-all": "^4.1.5",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
+    "webpack": "^5.68.0"
+  },
+  "dependencies": {
+    "vue": "^3.2.31"
+  }
+}
